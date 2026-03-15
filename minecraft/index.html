@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kowski | Minecraft Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        slate: { 850: '#1e293b' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; color: #f8fafc; }
+        .glow-bg {
+            position: fixed;
+            inset: 0;
+            background:
+                    radial-gradient(circle at 15% 50%, rgba(16, 185, 129, 0.08), transparent 25%),
+                    radial-gradient(circle at 85% 30%, rgba(250, 204, 21, 0.06), transparent 25%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-200">
+
+<div class="glow-bg"></div>
+
+<nav class="fixed top-0 w-full z-50 border-b border-slate-800/50 bg-slate-950/80 backdrop-blur-md">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
+        <a href="../index.html" class="text-xl font-bold tracking-tight text-white">KOWSKI</a>
+        <a href="../index.html" class="text-sm text-slate-400 hover:text-emerald-400 transition-colors">← Back</a>
+    </div>
+</nav>
+
+<header class="pt-40 pb-24 max-w-5xl mx-auto px-6">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-slate-400 text-xs font-medium mb-6">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+        Minecraft Portfolio
+    </div>
+
+    <h2 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+        Minecraft <br />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-lime-300">Development.</span>
+    </h2>
+
+    <p class="text-slate-400 text-lg md:text-xl max-w-2xl leading-relaxed">
+        Experience with <strong>Java plugin development</strong>, punishment systems, and <strong>Minecraft server configurations</strong> built to support moderation, gameplay tuning, and community management.
+    </p>
+</header>
+
+<section id="projects" class="py-12 max-w-5xl mx-auto px-6 pb-32">
+    <div class="flex items-center gap-4 mb-12">
+        <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-slate-500">Selected Work</h3>
+        <div class="h-px bg-slate-800 flex-1"></div>
+    </div>
+
+    <div class="space-y-16">
+
+        <div class="group relative bg-slate-900/40 border border-slate-800/60 rounded-2xl p-8 hover:border-emerald-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-emerald-900/10 hover:-translate-y-1">
+            <div class="absolute inset-0 bg-gradient-to-b from-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"></div>
+
+            <div class="relative flex flex-col md:flex-row justify-between items-start gap-8">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <h4 class="text-2xl font-bold text-slate-100 group-hover:text-emerald-400 transition-colors">Veritas</h4>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 uppercase tracking-wide">Punishment Plugin</span>
+                    </div>
+
+                    <p class="text-slate-400 mb-8 leading-relaxed text-sm md:text-base">
+                        A custom punishment plugin built in <strong>Java</strong> for Minecraft servers. Veritas was designed to support moderation workflows with a practical structure focused on punishments, and administrative control.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-sm text-slate-300 font-mono">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="coffee" class="w-4 h-4 text-emerald-500"></i> Java Development
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="shield" class="w-4 h-4 text-emerald-500"></i> Punishment Systems
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="server" class="w-4 h-4 text-emerald-500"></i> Minecraft Plugins
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="terminal-square" class="w-4 h-4 text-emerald-500"></i> Server Logic
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700/50 text-xs text-slate-300">Java</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700/50 text-xs text-slate-300">Minecraft</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700/50 text-xs text-slate-300">Plugin Development</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4 min-w-[160px]">
+                    <div class="flex items-center justify-center gap-2 w-full bg-slate-800 text-slate-300 px-4 py-2.5 rounded-lg font-semibold text-sm border border-slate-700">
+                        Private Project <i data-lucide="lock" class="w-4 h-4"></i>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-emerald-500/80 text-xs font-medium uppercase tracking-wider">
+                        <i data-lucide="pickaxe" class="w-3 h-3"></i> Java Plugin
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="group relative bg-slate-900/40 border border-slate-800/60 rounded-2xl p-8 hover:border-amber-500/30 transition-all duration-300 hover:shadow-2xl hover:shadow-amber-900/10 hover:-translate-y-1">
+            <div class="absolute inset-0 bg-gradient-to-b from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"></div>
+
+            <div class="relative flex flex-col md:flex-row justify-between items-start gap-8">
+                <div class="flex-1">
+                    <div class="flex items-center gap-3 mb-4">
+                        <h4 class="text-2xl font-bold text-slate-100 group-hover:text-amber-400 transition-colors">Server Configuration Work</h4>
+                        <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20 uppercase tracking-wide">Configuration</span>
+                    </div>
+
+                    <p class="text-slate-400 mb-8 leading-relaxed text-sm md:text-base">
+                        Worked on Minecraft server configurations to shape gameplay, moderation flows, permission systems, and server behavior. This included adjusting plugin configs and tailoring setups to match the needs of specific communities.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8 text-sm text-slate-300 font-mono">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="sliders-horizontal" class="w-4 h-4 text-amber-500"></i> Plugin Configuration
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="settings-2" class="w-4 h-4 text-amber-500"></i> Gameplay Tuning
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="shield-check" class="w-4 h-4 text-amber-500"></i> Moderation Setup
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="users" class="w-4 h-4 text-amber-500"></i> Community-Focused Systems
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700/50 text-xs text-slate-300">Configurations</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700/50 text-xs text-slate-300">Minecraft Servers</span>
+                        <span class="px-3 py-1 rounded-full bg-slate-800/50 border border-slate-700/50 text-xs text-slate-300">Permissions</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4 min-w-[160px]">
+                    <div class="flex items-center justify-center gap-2 w-full bg-slate-800 text-slate-300 px-4 py-2.5 rounded-lg font-semibold text-sm border border-slate-700">
+                        Experience <i data-lucide="wrench" class="w-4 h-4"></i>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-amber-400/80 text-xs font-medium uppercase tracking-wider">
+                        <i data-lucide="settings" class="w-3 h-3"></i> Practical Work
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="py-12 border-t border-slate-800/50 bg-slate-950/50">
+    <div class="max-w-5xl mx-auto px-6 flex justify-center items-center">
+        <p class="text-slate-600 text-xs tracking-widest uppercase font-medium">© 2026 Kowski</p>
+    </div>
+</footer>
+
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>
